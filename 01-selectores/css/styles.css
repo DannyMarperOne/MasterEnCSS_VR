@@ -1,0 +1,140 @@
+/*
+NOTA: CSS lee de arriba abajo, significa si sobreescribo algun estilo a alguna etiqueta, id, etc, se aplica el ultimo estilo que se alla asignado.
+/*
+
+
+
+#######SELECETORES#####
+*/
+
+/*
+SELECTOR UNIVERSAL
+
+* SI PONGO UN ASTERISCO EN CSS QUIERE DECIR QUE ESE ESTILO SE APLICARA A TODO EL DOCUMENTO CSS O EN SU CASO A TODO LO QUE SE ENCUENTRE DENTRO DE UNA SELECCION DE UNA ETIQUETA COMO SE MUESTRA EN UN EJEMPLO DE SLECTOR ATRIBUTO
+*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+SELECTOR DE ETIQUETA
+
+Permite seleccionar cualquier etiqueta del documento html y esta afecta a todas las etiquetas que se llamen igual o dependiendo como se mande a llamar esa etiqueta
+*/
+
+h1 {
+  background: #d11515;
+  color: #faf6f6;
+  padding: 10px;
+}
+
+a {
+  font-size: 18px;
+  color: seagreen;
+  text-decoration: none;
+}
+
+footer a {
+  font-size: 20px;
+  color: blueviolet;
+  text-emphasis: none;
+}
+
+/*
+SELECTOR DE ID
+
+Permite seleccionar cualquier elemento al que se le haya asignado una ID, si se quieren aplicar a distintos ID el mismo estilo, estos se separan por una coma.
+
+ID SON PARA UN SOLO ELEMENTO
+CLASE ES PARA VARIOS ELEMENTOS
+*/
+
+#descripcion {
+  border: 3px solid black;
+  padding: 15px;
+}
+
+/*
+SELECTOR DE CLASE
+
+A diferencia de ID, el selector es mejor utilizarlo para varios objetos o etiquetas, etc... y el de ID se recomienda que solo sea a un unico elemento
+*/
+
+.parrafo {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.parrafo1,
+.parrafo3 {
+  background-color: blue;
+  color: beige;
+  padding: 3px;
+}
+
+.parrafo1 {
+  background-color: rgb(231, 122, 19);
+  color: rgb(4, 2, 14);
+}
+
+/*
+SELECTOR DE ATRIBUTO
+
+*/
+
+#usuario form {
+  border: 5px solid blue;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#usuario form * {
+  display: block;
+  padding: 20px;
+}
+
+/*
+EJEMPLO DE SELECTOR DE ATRIBUTO
+
+*/
+input[type="text"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+input[type="submit"] {
+  background: chartreuse;
+  color: wheat;
+  padding: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/*
+SELECTORES HIJO
+*/
+
+#menu > li > a {
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+}
+
+/*PRIORIDADES*/
+/*Mientras mas especifica una regla, más prioridad tiene, como en el siguiente ejemplo con h1*/
+#saludo h1 {
+  background: greenyellow;
+}
+
+h1 {
+  background: rgb(11, 204, 230) !important;
+}
+h1 {
+  background: purple;
+}
+
+/*Por lo general el diseño que se encuentra más abajo del css es el diseño que predomina, pero si hay un disño css que utilice los mismos objetos y es más especifico, entonces predominaria ese en la parte especifica seleccionada e ignorara los diseños anteriores, pero en cambio si se agrega el mismo objeto pero con la palabra !important, entonces este automaticamente tiene toda la prioridad en todos los objetos con el mismo nombre y se quedaria con ese diseño sin inportar en que parte del documento este escritp*/

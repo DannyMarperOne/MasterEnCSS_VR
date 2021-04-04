@@ -1,0 +1,35 @@
+@font-face{ /*Con esta propiedad se mandan a llamar las fuentes que se quieren agregar al documento pero de manera local*/
+    font-family: PacificoMarper;
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+
+h1{
+    font-family: 'Russo One', sans-serif;/*esta fuente se agrego a la pagina a traves del link que se agurego en el html*/
+    font-style: italic; /*ESTILO DE LA FUENTE*/ 
+    text-transform: uppercase; /*Sirve para mayusculas y minusculas mayormente*/
+    font-size: 45px;
+
+/*COLORES*/
+
+
+/*COLORES DEL SISTEMA*/
+color: mediumpurple;
+/*COLORES EXADECIMAL*/
+color: #d82121;
+/*COLORES RGB*/
+color: rgb(230, 10, 198);
+/*COLORES RGBA*/
+color: rgba(100, 220, 198,0.5);
+}
+
+
+h3{
+    font-family: PacificoMarper, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*Aqui agregre la fuente que se mando a llamr desde el font-face*/
+    font-size: 30px; /*TAMAÑO DE LA FUENTE*/
+    font-weight: lighter; /*GROZOR DE LA LETRA*/
+}
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*TIPO DE FUENTE*/
+    font-size: 20px;
+}

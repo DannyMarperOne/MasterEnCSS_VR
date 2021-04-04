@@ -1,0 +1,57 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+  font-size: 20px;
+}
+
+ul li:first-child {
+  /*Pseudoclase que permite elegir el primer elemento de la lista*/
+  color: blueviolet;
+  font-weight: bold;
+}
+
+ul li:nth-child(2) {
+  /*Pseudoclase que permite elegir cualquier elemento de la lista*/
+  color: rgb(85, 20, 146);
+  font-weight: bold;
+}
+
+ul li:last-child {
+  /*Pseudoclase que permite elegir el ultimo elemento de la lista*/
+  color: brown;
+  font-weight: bold;
+}
+
+/*Pseudo clases para links*/
+#mi-enlace {
+  font-size: 30px;
+  color: black;
+}
+
+#mi-enlace:link {
+  color: lightgreen;
+}
+
+#mi-enlace:visited {
+  color: orangered;
+}
+
+#mi-enlace:hover {
+  color: blueviolet;
+}
+#mi-enlace:active {
+  color: olivedrab;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Selector de atributos*/
+input[type="text"] {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+input[type="text"]:focus {
+  border: 4px dashed red;
+}
