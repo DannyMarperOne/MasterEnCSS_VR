@@ -41,6 +41,10 @@ a:visited {
 .blue {
   color: #0c73f2 !important;
 }
+
+.orange {
+  color: #d69d2a !important;
+}
 /* FORMULARIOS */
 input[type="text"],
 input[type="password"],
@@ -214,7 +218,7 @@ button:active {
 }
 
 #frase {
-  clear: both; /* both (el elemento y los que le siguen no envolverán a un elemento flotante anterior por ninguno de los dos lados; reestablece el flujo “normal”) */
+  /*clear: both;  both (el elemento y los que le siguen no envolverán a un elemento flotante anterior por ninguno de los dos lados; reestablece el flujo “normal”) */
   width: 180px;
   padding: 10px;
   font-size: 14px;
@@ -297,6 +301,7 @@ button:active {
   font-weight: normal;
   letter-spacing: 1px;
   text-align: center;
+  margin-top: -20px;
   padding-top: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
@@ -322,4 +327,14 @@ button:active {
 #sections .date {
   color: gray;
   font-size: 14px;
+}
+
+#sections .stikerOne,
+#sections .stikerTwo {
+  position: absolute;
+  margin-top: -38px;
+  z-index: 0; /* Para ver cual capa se vera mas enfrente o mas atras */
+}
+#sections .stikerTwo {
+  margin-left: 860px;
 }
