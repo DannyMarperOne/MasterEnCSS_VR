@@ -13,7 +13,7 @@ SELECTOR UNIVERSAL
 * SI PONGO UN ASTERISCO EN CSS QUIERE DECIR QUE ESE ESTILO SE APLICARA A TODO EL DOCUMENTO CSS O EN SU CASO A TODO LO QUE SE ENCUENTRE DENTRO DE UNA SELECCION DE UNA ETIQUETA COMO SE MUESTRA EN UN EJEMPLO DE SLECTOR ATRIBUTO
 */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; /* como esta en el * estas seran las fuentes predefinidas para la pagina web */
 }
 
 /*
@@ -23,21 +23,21 @@ Permite seleccionar cualquier etiqueta del documento html y esta afecta a todas 
 */
 
 h1 {
-  background: #d11515;
-  color: #faf6f6;
-  padding: 10px;
+  background: #d11515; /* Color del Fondo */
+  color: #faf6f6; /* Color del texto */
+  padding: 10px; /* espacio entre el contenido y el borde de la caja */
 }
 
 a {
-  font-size: 18px;
-  color: seagreen;
-  text-decoration: none;
+  font-size: 18px; /* Tamaño de la fuente */
+  color: seagreen; /* Color del texto */
+  text-decoration: none; /* La decoración del texto, puede ser subrayado, doble raya, ninguno, etc... */
 }
 
 footer a {
-  font-size: 20px;
-  color: blueviolet;
-  text-emphasis: none;
+  font-size: 20px; /* Tamaño de la fuente */
+  color: blueviolet; /* Color del texto */
+  text-emphasis:none ; /* Define que tipo de enfasis tedra el texto */
 }
 
 /*
