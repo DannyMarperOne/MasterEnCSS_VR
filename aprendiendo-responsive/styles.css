@@ -1,32 +1,32 @@
 /* Para el responsive siempre hay que usar el ancho de las cajas en porcentajes % y no en tamaños fijos como lo es en pixeles px */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0px; /* permie establecer los cuatro márgenes de un elemento a la vez */
+  padding: 0px; /* Es el espacio entre el elemento del centro y el borde de una caja */
 }
 .clearfix {
   /* para que se limpien los flotados y detecte el tamaño que tienen los elementos de adentro */
-  float: none;
-  clear: both;
+  float: none; /* un elemento del flujo normal puede colocarse a lo largo del lado izquierdo o derecho o ninguna lado de su contenedor */
+  clear: both; /* La propiedad define los lados del elemento que no deben flotar. Apaga la flotación a ese lado específico (clear: none | left | right | both)*/
 }
 #container {
-  width: 70%;
-  background: red;
+  width: 70%; /* Ancho */
+  background: red; /* Fondo de color */
   margin: 0px auto; /* funciona para centrar */
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 40px; /* margen de 40px por la parte de arriba */
+  margin-bottom: 40px; /* margen de 40px por la parte de abajo */
+  font-family: Arial, Helvetica, sans-serif; /* Tipografia */
 }
 header {
   width: 100%;
   height: 150px;
   background: lightskyblue;
-  color: #333333;
-  line-height: 150px;
-  text-align: center;
+  color: #333333; /* color de la letra */
+  line-height: 150px; /* define el alto minimo de una linea de texto, con esta puedes mover un texto hacia arriba o hacia habajo para acomodarlo */
+  text-align: center; /* acomoda un elemento entre izquierda y derecha, (start | end | left | right | center | justify | match-parent | start end ) */
 }
 aside {
   width: 25%;
-  min-height: 700px;
+  min-height: 700px;/* altura minima del elemento */
   float: left;
   background: #ccc;
   text-align: center;
@@ -46,7 +46,7 @@ aside {
   color: white;
   line-height: 150px;
   text-align: center;
-  border: 2px solid white;
+  border: 2px solid white; /* El borde de la caja, se le pueden dar distintos atibutos como color, ancho, tipo de borde o animación */
   float: left;
   margin: 15px;
 }
