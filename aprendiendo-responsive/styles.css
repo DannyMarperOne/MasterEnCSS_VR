@@ -66,7 +66,7 @@ aside {
 @media (max-width: 700px) {
   /* se ejecutaran estos estilos */
   #container {
-    overflow: hidden;
+    overflow: hidden; /* en caso de que el texto de sobre salga hacia abajo de la caja, este creara un tipo de escrol para poder ver la informacion que resta  */
   }
   aside {
     float: none;
