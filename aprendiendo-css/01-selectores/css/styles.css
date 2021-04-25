@@ -37,7 +37,7 @@ a {
 footer a {
   font-size: 20px; /* Tamaño de la fuente */
   color: blueviolet; /* Color del texto */
-  text-emphasis:none ; /* Define que tipo de enfasis tedra el texto */
+  text-emphasis: none; /* Define que tipo de enfasis tedra el texto */
 }
 
 /*
@@ -50,8 +50,8 @@ CLASE ES PARA VARIOS ELEMENTOS
 */
 
 #descripcion {
-  border: 3px solid black;
-  padding: 15px;
+  border: 3px solid black; /* Borde */
+  padding: 15px; /* distancia entre el texto y el borde de la caja */
 }
 
 /*
@@ -61,9 +61,9 @@ A diferencia de ID, el selector es mejor utilizarlo para varios objetos o etique
 */
 
 .parrafo {
-  font-style: italic;
-  text-decoration: underline;
-  font-weight: bold;
+  font-style: italic; /* Estilo de la fuente */
+  text-decoration: underline; /* decoración del texto */
+  font-weight: bold; /* es el peso de la fuente y se puede asignar los siguientes  normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900  */
 }
 
 .parrafo1,
@@ -75,7 +75,7 @@ A diferencia de ID, el selector es mejor utilizarlo para varios objetos o etique
 
 .parrafo1 {
   background-color: rgb(231, 122, 19);
-  color: rgb(4, 2, 14);
+  color: rgb(4, 2, 14); /* color de la fuente demostrada de en formato rgb */
 }
 
 /*
@@ -90,7 +90,7 @@ SELECTOR DE ATRIBUTO
 }
 
 #usuario form * {
-  display: block;
+  display: block; /* La propiedad especifica el tipo de cuadro de representación utilizado para un elemento. en si es la manera en la que se acomodoran los bloques, puede ser en las siguientes formas, inline | block | inline-block | list-item | run-in | compact | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | ruby | ruby-base | ruby-text | ruby-base-group | ruby-text-group | none*/
   padding: 20px;
 }
 
