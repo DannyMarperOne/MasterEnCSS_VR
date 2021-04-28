@@ -234,6 +234,7 @@ body {
 
 #lateral input[type="text"]:focus {
   color: #555;
+  outline: none; /* para quitar el recuadro negro que aparece cuando se preciona el input */
 }
 
 #lateral input[type="button"],
