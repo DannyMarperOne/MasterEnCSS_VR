@@ -44,6 +44,10 @@ body {
 .icon {
   font-family: "WebSymbolsRegular";
 }
+.clearfix {
+  float: none;
+  clear: both;
+}
 
 /* CABECERA */
 #header {
@@ -344,4 +348,107 @@ body {
 #login a:hover {
   text-decoration: underline;
   color: #2f78bc;
+}
+
+#social {
+  height: 190px;
+}
+#social a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* ARTICULOS */
+#articles {
+  width: 860px;
+  float: left;
+}
+
+#articles h2 {
+  display: block;
+  width: 100%;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  font-family: "BebasNeue";
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  background: url("../img/pxgray.png"), white; /* detras del fondo de la imagen, abrá un fondo blanco */
+  box-shadow: 0px 1px 0px #393d3e, 1px 2px 0px #393d3e, 2px 3px 0px #393d3e,
+    3px 4px 0px #393d3e;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#articles article {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin: 4px auto;
+  padding: 10px;
+  font-family: "TrebuchetMS";
+  background: white;
+  color: black;
+  box-shadow: 1px 1px 2px solid #ddd;
+}
+
+#articles article h4 {
+  display: block;
+  font-size: 23px;
+  margin: 3px;
+}
+
+#articles article h4 a {
+  text-decoration: none;
+  color: #00538c;
+}
+
+#articles article h4 a:hover {
+  text-decoration: underline;
+}
+
+#articles .data {
+  float: right;
+  background: #393d3f;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  margin: -10px;
+  padding: 4px;
+  font-size: 13px;
+  border-radius: 0px 0px 0px 10px; /* 0px esquina superior izquierda, 0px esquina superior derecha, 0px esquina inferior derecha y 10px esquina inferior izquierda*/
+}
+
+#articles .data span {
+  margin: 6px;
+}
+
+#articles p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+#blog {
+  height: 100px;
+  margin-top: 60px;
+  line-height: 100px;
+  text-align: center;
+  font-family: "BebasNeue";
+}
+
+#blog a {
+  display: block; /* aqui si hago esto, toda la caja se hace clicable */
+  font-family: "BebasNeue";
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #00538c;
+  text-decoration: none;
 }
