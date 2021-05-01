@@ -1,5 +1,4 @@
 /*FUENTES*/
-
 /* En las siguientes lineas se importan la fuentes que se ocuparán tratando de agregar varios formatos para los distintos tipos de navegadores */
 @font-face {
   font-family: "TrebuchetMS";
@@ -560,7 +559,7 @@ body {
 }
 
 #articles article {
-  width: 100%;
+  width: 98%;
   height: auto;
   border: 1px solid #ccc;
   margin: 40px auto;
