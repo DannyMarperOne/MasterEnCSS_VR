@@ -74,28 +74,28 @@
 }
 
 @media (max-width: 970px) {
-    #banner h1 {
-        font-size: 30px;
-        text-align: center;
-        margin: 33px auto;
-      }
+  #banner h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 33px auto;
+  }
   #articles {
     width: 65%;
   }
   #footer .wrap > div {
     width: 27.6%;
-    margin: 20px ;
+    margin: 20px;
   }
   #footer h5 {
     font-size: 26px;
   }
-  #footer ul li a{
-      font-size: 21px;
+  #footer ul li a {
+    font-size: 21px;
   }
   #footer #browsers img {
     width: 11%;
   }
-  
+
   #info p img {
     text-align: center;
     width: 100%;
@@ -103,11 +103,11 @@
   }
 }
 @media (max-width: 925px) {
-    #banner h1 {
-        font-size: 28px;
-        text-align: center;
-        margin: 33px auto;
-      }
+  #banner h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 33px auto;
+  }
   #lateral {
     width: 25%;
   }
