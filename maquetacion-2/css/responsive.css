@@ -1,4 +1,5 @@
-@media (max-width: 1250px) {
+/* RESPONSIVE DE LA PAGINA */
+@media (max-width: 1250px) { /* ancho maximo es 1250px va de 0px a 1250px de izquierda a derecha */
   .wrap {
     width: 90%;
     margin: 0px auto;
