@@ -1,10 +1,12 @@
 /* RESPONSIVE DE LA PAGINA */
-@media (max-width: 1250px) { /* ancho maximo es 1250px va de 0px a 1250px de izquierda a derecha */
+@media (max-width: 1250px) {
+  /* ancho maximo es 1250px va de 0px a 1250px de izquierda a derecha */
   .wrap {
     width: 90%;
     margin: 0px auto;
   }
   #banner h1 {
+    width: 95.5%;
     font-size: 35px;
     text-align: center;
     margin: 33px auto;
@@ -115,6 +117,7 @@
   #lateral input[type="text"] {
     width: 78%;
   }
+
   #login input[type="email"],
   #login input[type="password"] {
     width: 75%;
@@ -128,5 +131,198 @@
   }
   #login a {
     font-size: 11px;
+  }
+}
+
+@media (max-width: 899px) {
+  #lateral h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 799px) {
+  #banner h1 {
+    font-size: 29px;
+  }
+  .card .description {
+    display: none;
+  }
+  .card {
+    height: auto;
+  }
+  .card .category {
+    font-size: 13px;
+    margin-top: -23px;
+  }
+  #footer .wrap > div {
+    width: 27%;
+  }
+}
+
+@media (max-width: 745px) {
+  #header {
+    width: 100%;
+    height: 125px;
+    padding-top: 10px;
+  }
+  #menu {
+    clear: both;
+    float: none;
+    width: 456px;
+    margin: 0px auto;
+  }
+  #logo {
+    float: none;
+    width: 200px;
+    margin: 0px auto;
+  }
+  #lateral input[type="text"] {
+    width: 72%;
+  }
+  #login input[type="email"],
+  #login input[type="password"] {
+    width: 72%;
+  }
+  #login input[type="button"],
+  #login input[type="submit"],
+  #login input[type="reset"],
+  #input button {
+    width: 38%;
+    padding-left: 0px;
+    font-size: 11px;
+    margin-left: 11px;
+  }
+  #login a {
+    font-size: 9px;
+    margin-left: 5px;
+  }
+  #social .overlay {
+    height: 12px;
+    margin-top: -48px;
+    margin-left: 58px;
+    font-size: 11px;
+  }
+  #footer .wrap > div {
+    width: 26.6%;
+  }
+}
+@media (max-width: 689px) {
+  #banner h1 {
+    font-size: 20px;
+    line-height: 38px;
+  }
+  .card .icon {
+    font-size: 39px;
+  }
+  .card:hover .icon {
+    font-size: 50px;
+  }
+  #lateral input[type="text"] {
+    width: 90%;
+  }
+  #login input[type="button"],
+  #login input[type="submit"],
+  #login input[type="reset"],
+  #input button {
+    width: 40%;
+    padding-left: 0px;
+    font-size: 19px;
+    margin-left: 30px;
+  }
+  #login a {
+    font-size: 14px;
+    margin-left: 18px;
+  }
+  #articles {
+    float: none;
+    width: 100%;
+    margin: 0px auto;
+    min-height: auto;
+  }
+  #lateral {
+    float: none;
+    width: 100%;
+    margin: 0px auto;
+    min-height: auto;
+    margin-top: 20px;
+  }
+  #social .overlay {
+    height: 21px;
+    margin-top: -54px;
+    margin-left: 88px;
+    font-size: 20px;
+  }
+  #login #user {
+    margin-left: 15px;
+    margin-top: 4px;
+    font-size: 19px;
+  }
+  #login #password {
+    margin-left: 19px;
+    margin-top: 23px;
+    font-size: 26px;
+  }
+  #footer {
+    height: auto;
+    padding-bottom: 60px;
+  }
+  #footer .wrap > div {
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 30px;
+  }
+  #footer h5 {
+    font-size: 27px;
+  }
+  #info p img {
+    width: 52%;
+  }
+  #footer #browsers img {
+    width: 14%;
+  }
+}
+@media (max-width: 510px) {
+  #header {
+    width: 100%;
+    height: 300px;
+    padding-top: 10px;
+  }
+  #logo {
+    float: left;
+  }
+  #menu {
+    clear: both;
+    float: none;
+    width: 100%;
+    margin: 0px auto;
+  }
+  #menu ul li a:hover {
+    color: #37bcf9;
+    /*  transform: modifica escala, rotacion, etc, y puedes modificar textos en css sin que afecte a toda la maquetación; */
+    transform: scale(1, 1);
+  }
+
+  #menu ul li {
+    width: 100%;
+    line-height: 60px;
+    margin: 0px 20px 0px 35px;
+  }
+  #banner {
+    height: 85px;
+  }
+  #banner h1 {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  #lateral input[type="text"] {
+    width: 85%;
+  }
+  #articles .data {
+    float: none;
+    margin: -10px;
+    border-radius: 0px;
+  }
+  #articles article h4 {
+    margin-top: 20px;
   }
 }
