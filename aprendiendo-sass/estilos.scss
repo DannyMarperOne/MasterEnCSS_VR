@@ -1,0 +1,7 @@
+/* Asi es como se usan otros archivos de sass dentro del principal y de igual forma se compilan, a esto se le llama "MODULOS */
+
+/* EL _ es para crear difentes modulos o archivos de sass y se pueden ir cargando al archivo principal*/
+
+//MODULOS
+@use 'base';
+@use 'encabezado';
