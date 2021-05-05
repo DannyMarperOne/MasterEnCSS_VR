@@ -1,0 +1,3 @@
+para instalar less es necesario ya tener intalado primero node.js, despues abrir el cmd y ejecutar el siquiente comnado ""nom install -g less" y lo ejecutamos y listo, quedará instalado.
+
+LESS tambien se tiene que compilar, para eso hay que ir al cmd y escribir la ruta donde tenemor el archivo de LESS de la siguiente manera "cd C:\Users\Danny Marper\Documents\Desarrollo Web\Cursos\CursosUdemy\VictorRobles\MasterEnCSS_VR\aprendiendo-less" y despues de eso hay que escribir lo siguiente para poder compilar nuestro archivo "lessc stilos.less styles.css", el primero es un compando de less para poder compilar, el segundo es el fichero que queremos compilar y el tercero es un fichero css donde se va a guardar todo lo compilado.

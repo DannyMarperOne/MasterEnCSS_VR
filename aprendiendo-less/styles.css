@@ -1,0 +1,38 @@
+body {
+  background: lightblue;
+}
+h1 {
+  font-family: Arial;
+}
+.informacion ul a {
+  color: green;
+  font-size: 10px;
+}
+.informacion {
+  /* se le puede pasar parametros como el @size */
+  box-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 5px gray;
+  /* tendra todos los parametros que se le asignaron arriba, solo el @size cambia y se podrian al elemto que necesitemos el tamaño de sombreado que necesitemos */
+}
+h1 {
+  font-size: 37px;
+}
+h1 {
+  color: blue;
+  /* .textoNegro(white)  puede usarse de cualquier manera*/
+}
+.informacion {
+  /* el contador ira restando 1, cuando el contador llegue a 0 terminara el bucle */
+  height: 900px;
+  /* el contador ira restando 1, cuando el contador llegue a 0 terminara el bucle */
+  height: 450px;
+  /* el contador ira restando 1, cuando el contador llegue a 0 terminara el bucle */
+  height: 300px;
+  /* el contador ira restando 1, cuando el contador llegue a 0 terminara el bucle */
+  height: 225px;
+  /* el contador ira restando 1, cuando el contador llegue a 0 terminara el bucle */
+  height: 180px;
+  /* el contador ira restando 1, cuando el contador llegue a 0 terminara el bucle */
+  height: 150px;
+  /* indico que el contador se hara 5 veces */
+}

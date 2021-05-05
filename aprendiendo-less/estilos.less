@@ -1,0 +1,58 @@
+//VARIABLES
+//De la siguiente manera se declaran varibles
+@bgcolor: lightblue;
+@fuente: Arial;
+@b: body;
+
+@{b}{
+   background: @bgcolor; 
+}
+h1{
+    font-family: @fuente;
+}
+
+//ANIDACIÓN
+.informacion{
+    ul{
+        a{
+            color: green;
+            font-size: 10px;
+        }
+    }
+}
+
+//MIXINS{
+    .sombras(@size){ /* se le puede pasar parametros como el @size */
+        box-shadow: 0px 0px @size black;
+        text-shadow: 0px 0px @size gray;
+    }
+
+.informacion{
+    .sombras(5px); /* tendra todos los parametros que se le asignaron arriba, solo el @size cambia y se podrian al elemto que necesitemos el tamaño de sombreado que necesitemos */
+}
+
+//OPERADORES
+h1{
+    font-size: 30px + 7px;
+}
+
+//MIXINS CONDICIONALES
+.textoNegro(@value) when (@value=true){ /* @value es mi variable */
+    color: black;
+}
+
+h1{
+    color: blue;
+    .textoNegro(false)
+    /* .textoNegro(white)  puede usarse de cualquier manera*/
+}
+
+//BUCLES
+.loop(@cont) when (@cont > 0){
+    .loop((@cont - 1)); /* el contador ira restando 1, cuando el contador llegue a 0 terminara el bucle */
+    height: (900px / @cont);
+}
+.informacion{
+    height: 900px;
+    .loop(6); /* indico que el contador se hara 5 veces */
+}
