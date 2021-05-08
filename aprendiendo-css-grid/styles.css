@@ -1,0 +1,67 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+.layout {
+  width: 80%; /* si se maneja el ancho en % el grid se hace completamente responsive */
+  margin: 0px auto;
+  height: 600px;
+  display: grid; /* asi se define para que un elemento sea grid */
+  grid-gap: 10px; /* este es como un tipo margin para grid (espacio entre elementos) */
+  /* grid-template-columns: calc(50% - 10px) calc(50% - 10px); */ /* esto es para que los elementos se pongan uno a un lado del otro (en este caso se define por columnas y se estan definiendo que abrá 2 columnas pero el tamaño se le puso con un calculo)*/
+  /* grid-template-columns: 50% 25%; */ /* dependiendo al numero de columnas se debe hacer el calculo de los tamaños que se quiere */
+  /* grid-template-columns: repeat(
+    4,
+    calc(25% - 10px)
+  ); */ /* aqui hacemos lo mismo que arriba pero en este caso se hace una funcion para que las cuatro columnas tengan un 25% de un solo golpe, en lugar de escribi 25% 25% 25% 25% (se le agrego un calc solo para quitar grid-gab)*/
+  /* grid-template-columns: 
+    repeat(2, calc(25% - 10px))
+    15% 35%;*/ /* aqui es otra manera de hacer lo de el tamaño de las columnas, las primeras dos columnas se les da un tamaño con una funcion ya que sera el mismo tamaño y las otras dos columnas se les da una funcion normal en porcentaje */
+  grid-template-columns: 1fr 1fr 1fr; /* esta es una nueva forma de separar columnas, en si cada fr o fraccion es una columna y se van acomodando igual automaticamente (de igual manera se puede hacer lo del repeat(4, 1fr))*/
+  grid-template-rows: repeat(2, 1fr) 3fr repeat(2, 1fr); /* esta propiedad define filas */
+  border: 3px solid orangered;
+  padding: 10px;
+}
+
+.layout .caja {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  border: 4px solid #222;
+  background: gray;
+}
+
+.layout .red {
+  /* lo siguiente es para expandir una caja hacia otra y que la siguiente se baje (esto se hace en el elemento que se quiere espandir) */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /* eso quiere decir que .layout .red desde la linea uno se va a expandir hasta la linea 4, para ver las lineas hay que inspeccionar el elemnto y ver el grid en "Disposicion"*/
+  background: red;
+}
+
+.layout .green {
+  background: green;
+  grid-row: 2 / 6;
+}
+
+.layout .blue {
+  background: blue;
+  grid-column: 2 / 4;
+}
+
+.layout .pink {
+  background: pink;
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+}
+.layout .lightblue {
+  background: lightblue;
+  grid-row: 3 / 5;
+}
+.layout .orange {
+  background: orange;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */ /* estas propiedades se pueden definir en una sola */
+  grid-column: 2 / 4; /* esta propiedad hace lo mismo que las potras dos pero resumida (se puede hacer tambien al reves (2 / 4) es cuestion de experimentar*/
+}
