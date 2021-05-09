@@ -2,6 +2,151 @@ body {
   text-align: center;
   font-family: sans-serif;
 }
+/* -------------EJERCICIO COMPLETO CON GRID AREAS------------------ */
+#website-areas * {
+  margin: 0px;
+  padding: 0px;
+}
+#website-areas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 70px 1fr 70px;
+  /* aqui empieza grid areas, se pone la sigiente propiedad con el nombre de un identificador en este caso "cabecera" y se repite, la cantidad de veces que se repita sera la cantidad de columnas, despues ese identificador se debe agregar como "grid-area: cabecera;" al elemento que le querramos agregar esa area ( se puede poner la propiedad . y esto significa que hay un espacio ahi)*/ /* ojo "grid-template-areas:...." va dentro del grid master */
+  grid-template-areas:
+    "cabecera cabecera cabecera cabecera cabecera"
+    "menu menu menu menu menu"
+    "contenido contenido contenido contenido lateral"
+    "pie pie pie pie lateral"; /* se pueden conbinar y acomodar como quieramos por ejemplo "pie" al final solo seran 4 columnas de pie y agregue "lateral" y este ultimo se expandira hacia abajo*/
+  /* grid-column-gap: 20px; */ /* es un margen solo a nivel de columnas */
+  /* grid-row-gap: 20px; */ /* es un margen solo a nivel de filas */
+  /* grid-gap: 20px; */ /* es un margen solo a nivel de lineas y columnas*/
+  /* los gab solo funcionan en el grid principal o grid master */
+  width: 75%;
+  height: 1000px; /* altura del navegador, (viewport height) */
+  margin: 0px auto;
+  border: 1px solid #ccc;
+}
+/* para centrar un elemnto en vertical con grid es necesario del uso de flexbox */
+#website-areas #cabecera {
+  grid-area: cabecera; /* esto es un grid area con identificador */
+  display: flex; /* convierto la cabecera en flex y agrego propiedades de flex box para centrar el contenido */
+  justify-content: center; /* centra todos los elementos que se encuentran dentro del flex master pero de izquierda a derecha */
+  align-items: center; /* esta propiedad es de flexbox y centra los elementos en vertical, esta se usa en el flex master osea en la caja que contiene otras cajas */
+  background: blue;
+  color: white;
+}
+#website-areas #cabecera h1 {
+  /* la siguiente propiedad ayuda a centrar en vertical los elemntos en el area que se encuentran, solo se usa en elementos que se encuentran dentro de un flex */
+  align-self: center; /* con esto se centra en flex y se debe poner tambien en grid para que se centre ya que grid por si solo no se puede */
+}
+#website-areas #menu {
+  grid-area: menu;
+  background: lightblue;
+  color: black;
+  line-height: 70px;
+}
+
+#website-areas #menu ul {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#website-areas #contenido {
+  grid-area: contenido;
+  display: grid; /* meti un grid dentro de otro grid ya creado */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 20px;
+  background: #eee;
+}
+
+#website-areas #contenido article {
+  background: #ccc;
+  border: 1px solid #555;
+}
+
+#website-areas #lateral {
+  grid-area: lateral;
+  background: orange;
+  color: white;
+}
+
+#website-areas #piepagina {
+  grid-area: pie;
+  background: black;
+  color: white;
+}
+/* --------------------EJERCICIO COMPLETO CON GRID----------------------- */
+#website * {
+  margin: 0px;
+  padding: 0px;
+}
+#website {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 70px 1fr 70px;
+  width: 75%;
+  height: 1000px; /* altura del navegador, (viewport height) */
+  margin: 0px auto;
+  border: 1px solid #ccc;
+}
+/* para centrar un elemnto en vertical con grid es necesario del uso de flexbox */
+#website #cabecera {
+  display: flex; /* convierto la cabecera en flex y agrego propiedades de flex box para centrar el contenido */
+  justify-content: center; /* centra todos los elementos que se encuentran dentro del flex master pero de izquierda a derecha */
+  align-items: center; /* esta propiedad es de flexbox y centra los elementos en vertical, esta se usa en el flex master osea en la caja que contiene otras cajas */
+  grid-column: 1 / 6; /* se expande la cabecera de la columna 1 a la 6 */
+  background: blue;
+  color: white;
+}
+#website #cabecera h1 {
+  /* la siguiente propiedad ayuda a centrar en vertical los elemntos en el area que se encuentran, solo se usa en elementos que se encuentran dentro de un flex */
+  align-self: center; /* con esto se centra en flex y se debe poner tambien en grid para que se centre ya que grid por si solo no se puede */
+}
+#website #menu {
+  grid-column: 1 / 6;
+  background: lightblue;
+  color: black;
+  line-height: 70px;
+}
+
+#website #menu ul {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#website #contenido {
+  grid-column: 1 / 5;
+  display: grid; /* meti un grid dentro de otro grid ya creado */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 20px;
+  background: #eee;
+}
+
+#website #contenido article {
+  background: #ccc;
+  border: 1px solid #555;
+}
+
+#website #lateral {
+  grid-column: 5 / 6;
+  background: orange;
+  color: white;
+}
+
+#website #piepagina {
+  grid-column: 1 / 6;
+  background: black;
+  color: white;
+}
+/* --------------------EJEMPLOS GRID-------------------------------------------------------- */
 .layout {
   width: 80%; /* si se maneja el ancho en % el grid se hace completamente responsive */
   margin: 0px auto;
