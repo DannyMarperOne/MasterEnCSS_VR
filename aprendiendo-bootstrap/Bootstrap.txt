@@ -1,1 +1,9 @@
-lo recomendable para instalar bootstrap es descargar el archivo zip de la pagina oficial y guardarlo en la carpeta del proyecto ya descomprimido
+lo recomendable para instalar bootstrap es descargar el archivo zip de la pagina oficial y guardarlo en la carpeta del proyecto ya descomprimido.
+
+despues es necesario descargar jquery, en la pagina oficial y descargar la primera version comprimida, al dar clic sobre la descarga, se abrira una pagina con codigo de jquery, lo que hay que hacer es, dar clic derecho, guardar como, y dirigirnos a la carpeta de nuestro proyecto y crear una carpeta que se llame jquery, dentro de esa carpeta hay que guardar el archivo.
+
+ya despues solo se tiene que agregar el bootstrap.min.css al html
+
+despues tambien hay que cargar el JQUERY de javascript ya que sin el JQUERY, bootstrap no funciona, (esto se hace al final del body por recomendación)....
+
+despues se debe agregar tambien el javascript de bootstrap de la version que se eligio, en mi caso fue la version bootstrap.min.css
