@@ -1,0 +1,1 @@
+lo recomendable para instalar bootstrap es descargar el archivo zip de la pagina oficial y guardarlo en la carpeta del proyecto ya descomprimido
