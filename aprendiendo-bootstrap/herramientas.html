@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- para el responsive es necesario el siguiente meta y se vera mejor el responsive y se prohibe a los usuarios de celular hacer sum con los dedos-->
+    <meta name="viewport" content="width-device-width, user-scalable-no" />
+    <title>Aprendiendo Bootstrap con Victor Robles</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <div class="container" style="height: 500px">
+      <h1>Herramientas Disponibles en Bootstrap 5</h1>
+      <hr />
+      <!-- la caja tiene el 25% de 500px, asi es como se agrega ancho y alto a una caja hija de una caja padre con clases de bootstrap -->
+      <!-- Ojo, al parecer el float-left en bootstrap 5 es float-start -->
+      <!-- para margin y paddin en bootstrap 5 se utiliza m y p, respectivamente y el tamaño de margen o padding, en caso de que se quiera separar por lados serian los siguientes, la letra m y p en conbinacion con "t" para top, "b" para bottom, "s" que significa start que seria lo mismo que left y "e" que significa end lo cual seria lo mismo que right, tambien si se pone "x" significa que dara el tamaño por left & right, y si se pone "y" se pondra el tamaño por top & bottom-->
+      <!-- para margen o pading negativo seria "m-n", "mt-n" o "p-n", "ps-n" y el tamaño que se desee -->
+      <div
+        class="
+          m-2
+          p-3
+          bg-danger
+          text-white
+          float-start
+          caja
+          w-25
+          h-25
+          border border-primaryrounded-0
+        "
+      >
+        Esto es una caja1
+      </div>
+      <div
+        class="
+          ms-4
+          p-1
+          bg-warning
+          text-success
+          float-sm-none float-md-start
+          caja
+          w-25
+          h-25
+          border border-success
+          rounded-0
+        "
+      >
+        Esto es una caja2
+      </div>
+      <div
+        class="
+          mt-2
+          p-5
+          bg-dark
+          text-info
+          float-start
+          caja
+          w-25
+          h-25
+          border border-dark
+          rounded-0
+        "
+      >
+        Esto es una caja3
+      </div>
+      <div class="clearfix"></div>
+      <!-- aqui un ejemplo de como se centraria una caja, en css nativo se utilizaria margin:0px auto; , para hacerlo en bootstrap 5 seria con la clase mx-auto -->
+      <!-- la sombra tambien se le puede agragar con clases -->
+      <!-- con la clase "invisible" se pueden ocultar elementos y tambien se puede aplicar la clase "visible"-->
+      <div
+        class="
+          shadow-lg
+          mx-auto
+          p-5
+          bg-dark
+          text-info
+          caja
+          w-25
+          h-25
+          border border-dark
+          rounded-0
+        "
+      >
+        Esto es una caja3
+      </div>
+      <div class="clearfix"></div>
+      <h2>Esto es el fin del contenedor</h2>
+      <hr />
+      <!-- display en bootstrap cambia el tamaño de los textos 1,2,3,4 ojo, mientras mas grande el numero más pequeño sera el texto-->
+      <!-- el weight en bootstrap 5 se utiliza de la siguiente manera "fw-" y el tipo de texto que se quiera-->
+      <!-- recuerda que en bootstrap 5 no se utiliza left o right sino start y end -->
+      <p class="display-4 fw-bold text-center text-decoration-underline">
+        Esto es un Texto
+      </p>
+      <p class="display-1 fw-light text-end">Esto es un Texto 2</p>
+      <!-- bootstrap te permite agregar trosos de codigo y lo muestra de cierta manera si es que html lo debe interpretar-->
+      <code>
+        <p>marper</p>
+        https://victorroblesweb.es/academy
+      </code>
+      <hr />
+      <!-- bootstrap les da formato a los atajos de teclado etc, esto ya es extra al igual que lo de code -->
+      <kbd>Control + W</kbd> para eliminar la pagina
+    </div>
+  </body>
+  <script type="type/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+  <script
+    type="type/javascript"
+    src="bootstrap-5.0.0-dist/js/bootstrap.min.js"
+  ></script>
+</html>
