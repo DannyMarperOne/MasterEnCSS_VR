@@ -7,6 +7,7 @@
   <meta name="viewport" content="width-device-width, user-scalable-no" />
   <title>Componentes de Bootstrap 5</title>
   <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <!-- aqui uso el dropdown para futuras referencias -->
 
@@ -86,10 +87,10 @@
         </nav>
       </header>
     </div>
-    <!----------------------------- ALERTS--------------------------- -->
+    <!----------------------------- ALERTS y MIGAS DE PAN O BREADCRUMB--------------------------- -->
     <div class="row">
       <div class="col-md-8 mt-3">
-        <!-- Breadcrumb o Miga de Pan -->
+        <!-------------------- Breadcrumb o Miga de Pan ---------------------->
         <!-- mas que nada sirve para indicar al usuario en que parte del sitio web se encuentra  -->
         <!-- aria-label solo indica mejor cual es la finalidad cierto elemento -->
         <nav aria-label="breadcrumb">
@@ -106,6 +107,58 @@
             </li>
           </ol>
         </nav>
+        <!-- ---------------------SLIDER----------------- -->
+
+        <div id="slider" class="carousel slide mb-3" data-bs-ride="carousel">
+          <!-- Indicadores del Slider -->
+          <div class="carousel-indicators">
+            <!-- #slider es la id que asigne en la parte de arriba al div del slider -->
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- imagenes del Slider -->
+            <div class="carousel-item active">
+              <img class="d-block w-100"
+                src="https://www.mundodeportivo.com/r/GODO/MD/p8/Motor/Imagenes/2021/02/24/Recortada/1303694294_20210223172520-kGzH-U492270191155iQF-980x554@MundoDeportivo-Web.jpg">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Monoplaza Redbull RB21 F1 </h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <!-- imagenes del Slider -->
+            <div class="carousel-item">
+              <img class="d-block w-100"
+                src="https://phantom-marca.unidadeditorial.es/de7409474efd01bc0363f93afaffdf67/resize/1320/f/jpg/assets/multimedia/imagenes/2021/05/07/16203713705778.jpg">
+              <!-- Caption slider -->
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <!-- imagenes del Slider -->
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://i.blogs.es/489256/img_20210303_142210/840_560.jpg">
+              <!-- caption slider -->
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#slider" class="carousel-control-prev" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a href="#slider" class="carousel-control-next" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        <!-- FIN DEL SLIDER -->
+        <!----------------------------- ALERTS--------------------------- -->
         <!-- a continucacion se muestra como se aplica una alerta y como se usa cada clase -->
         <!-- alert significa que es una alerta, alert-primary es el color de la alerta, alert-dismissble indica que esa alerta se podra cerrar, pero para eso hay que agregar un boton que unas lineas despues se explica, role="alert" creo que indica que es una alerta, fade show creo le da un efecto de suavizado al cerrar-->
         <div class="alert alert-primary alert-dismissible fade show" role="alert">
@@ -130,19 +183,165 @@
           No has rejistrado.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
+        <!-- ------------------BADGE----------------- -->
+        <h2>
+          <!-- el badge se pone con la clase badge y su color se pone con la clase bg- y el color deseado y ya seria recomendado buscar más clases en la documentación de bootstrap 5-->
+          <span class="badge bg-success ">Nuevo</span>
+          Componentes de Bootstrap
+        </h2>
+        <p>Traje de Baño
+          <span class="badge bg-warning rounded-pill text-dark">Nuevo</span>
+        </p>
+        <a href="#" class="badge bg-info rounded-pill text-dark">Nuevo Link</a>
+      </div>
+      <!-- ----------------MODAL-------------------- -->
+      <div class="col-md-4">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#staticBackdrop">
+          Abrir Modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Titulo del Modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>I will not close if you click outside me. Don't even try to press escape key.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Entendido</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------COLLAPSE----------------- -->
+        <a href="#informacion" class="btn btn-success mt-3" data-toggle="collapse">
+          Mostrar Información
+        </a>
+        <div class="collapse" id="informacion" role="button">
+          <div class="card card-body bg-dark text-white mt-2">
+            Esta es la informacion oculta fachera facherita
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------- CARDS--------------------- -->
+    <div class="row col-md-8">
+      <div class="card col p-0 me-3">
+        <img class="car-img-top img-fluid" src="//via.placeholder.com/350x150">
+        <div class="card-body">
+          <h3 class="card-title">Tarjeta 1</h3>
+          <p class="card-text">Hola entra a este articulo y aprenderas bootstrap</p>
+        </div>
+      </div>
+      <div class="card col p-0 me-3">
+        <img class="car-img-top img-fluid" src="//via.placeholder.com/350x150">
+        <div class="card-body">
+          <h3 class="card-title">Tarjeta 2</h3>
+          <p class="card-text">Hola entra a este articulo y aprenderas bootstrap</p>
+          <!-------------------------- BOTONES ----------------------->
+          <a href="#" class="btn btn-info">Entrar</a>
+        </div>
+      </div>
+      <div class="card col p-0 me-3">
+        <img class="car-img-top img-fluid" src="//via.placeholder.com/350x150">
+        <div class="card-body">
+          <h3 class="card-title">Tarjeta 3</h3>
+          <p class="card-text">Hola entra a este articulo y aprenderas bootstrap</p>
+          <!-------------------------- BOTONES ----------------------->
+          <a href="#" class="btn btn-warning">Entrar</a>
+        </div>
+      </div>
+      <!-- ----------------PAGINADO---------------- -->
+      <div class="row">
+        <nav aria-label="pagination" class="m-2">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">
+                &laquo;
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                1
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                2
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                3
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                4
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                &raquo;
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <!---------------------- JUMBOTRON------------------ -->
+      <div class="col-md-8 ">
+        <div class="jumbotron my-1">
+          <h1 class="display-6">Bienvenido a Mi web</h1>
+          <p class="lead">Esto es un jumbotron en bootstrap</p>
+          <hr class="my-2">
+          <p>Identificate en la web</p>
+          <a href="#" class="btn btn-primary btn-xs">Registrate</a>
+        </div>
       </div>
     </div>
   </div>
+  <!-- ASI SE DEBE ACOMODAR PARA QUE FUNCIONE EL DROPDOWN -->
+  <!-- jQuery -->
+  <script src="jquery/jquery-3.6.0.min.js"></script>
+
+  <!-- Popper -->
+  <!-- <script src="jquery/popper.min.js"></script> -->
+
+  <!-- Bootstrap js -->
+  <script src="bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+
+  <!-- SCRIPT DEL SLIDER -->
+  <!-- <script>
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })
+  </script> -->
+  <script>
+    $(document).ready(function () {
+      $(".carousel").carousel({
+        interval: 3000
+      });
+    });
+  </script>
+
+
+  <!-- JavaScript and dependencies esto solo me sirve para el modal-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+  </script>
+
 </body>
 
 </html>
-
-<!-- ASI SE DEBE ACOMODAR PARA QUE FUNCIONE EL DROPDOWN -->
-<!-- jQuery -->
-<script src="jquery/jquery-3.6.0.min.js"></script>
-
-<!-- Popper -->
-<script src="jquery/popper.min.js"></script>
-
-<!-- Bootstrap js -->
-<script src="bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
